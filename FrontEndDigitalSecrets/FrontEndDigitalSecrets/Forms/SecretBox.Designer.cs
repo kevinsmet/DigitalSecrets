@@ -57,7 +57,6 @@
             this.Controls.Add(this.UploadASecret);
             this.Name = "SecretBox";
             this.Text = "SecretBox";
-            this.Load += new System.EventHandler(this.SecretBox_Load);
             this.ResumeLayout(false);
 
         }

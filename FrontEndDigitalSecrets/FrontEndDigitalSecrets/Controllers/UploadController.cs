@@ -5,8 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using FrontEndDigitalSecrets.Forms;
 
-namespace FrontEndDigitalSecrets.Controllers {
-   public class UploadController {
+namespace FrontEndDigitalSecrets.Controllers
+{
+    public class UploadController
+    {
         internal IUploadView uploadView { get; }
         private ISecretService secretService;
 
@@ -17,6 +19,7 @@ namespace FrontEndDigitalSecrets.Controllers {
 
             this.uploadView.SetController(this);
         }
+
         public void UploadSecret(string Description, string FirstName, string LastName)
         {
             secretService.UploadSecret(Description, FirstName, LastName);

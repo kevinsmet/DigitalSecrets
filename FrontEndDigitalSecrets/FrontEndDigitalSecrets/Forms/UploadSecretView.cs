@@ -29,11 +29,6 @@ namespace FrontEndDigitalSecrets.Forms {
             this.uploadController = uploadController;
         }
 
-        private void Upload_Click(object sender, EventArgs e)
-        {
-            uploadController.UploadSecret(txtDescription.Text, txtFirstName.Text, txtLastName.Text);
-        }
-
         public void Clear()
         {
             txtDescription.Text = "";
@@ -41,10 +36,6 @@ namespace FrontEndDigitalSecrets.Forms {
             txtLastName.Text = "";
         }
 
-        public void Close()
-        {
-            Application.Exit();
-        }
 
         private void textBox1_TextChanged(object sender, EventArgs e) {
 
@@ -52,6 +43,12 @@ namespace FrontEndDigitalSecrets.Forms {
 
         private void UploadSecretView_Load(object sender, EventArgs e) {
 
+        }
+
+        private void Upload_Click_1(object sender, EventArgs e)
+        {
+            uploadController.UploadSecret(txtDescription.Text, txtFirstName.Text, txtLastName.Text);
+            this.Close();
         }
     }
 }

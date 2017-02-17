@@ -7,20 +7,21 @@ import com.cegeka.DigitalSecretBox.domain.secrets.SecretRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+import javax.inject.Inject;
 import java.util.List;
 
 @Controller
 public class SecretService {
 
-    @Autowired
+    @Inject
     private PineappleRepository pineappleRepository;
 
-    @Autowired
+    @Inject
     private SecretRepository secretRepository;
 
-    public void addSecret(Secret secret)
+    public void addSecret(String description, String firstName, String lastName)
     {
-        SecretRepository.addSecret(secret);
+        SecretRepository.addSecret(description,firstName,lastName);
     }
 
     public void getSecret(Secret secret){

@@ -1,5 +1,8 @@
 package com.cegeka.DigitalSecretBox.domain.pineapples;
 
+
+
+
 public class Pineapple {
 
     public String firstName;

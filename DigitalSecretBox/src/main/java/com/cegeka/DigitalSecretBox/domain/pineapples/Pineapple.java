@@ -1,8 +1,5 @@
 package com.cegeka.DigitalSecretBox.domain.pineapples;
 
-
-
-
 public class Pineapple {
 
     public String firstName;
@@ -14,7 +11,7 @@ public class Pineapple {
     }
 
     public static String getPineApple(Pineapple pineapple) {
-        return pineapple.getFirstName()+pineapple.getLastName();
+        return pineapple.getFirstName() + pineapple.getLastName();
     }
 
     public String getFirstName() {

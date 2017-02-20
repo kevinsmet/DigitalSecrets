@@ -23,7 +23,6 @@ public class SecretRepository {
         Pineapple.getPineApple(pineApple);
     }
 
-
     public List<Secret> getSecrets() {
         return secrets;
     }
@@ -32,10 +31,9 @@ public class SecretRepository {
         this.secrets = secrets;
     }
 
-    public static void addSecret(String description,String firstName, String lastName)
-     {
-         pineApple = new Pineapple(firstName,lastName);
-         secret = new Secret(description,pineApple);
+    public static void addSecret(String description, String firstName, String lastName) {
+        pineApple = new Pineapple(firstName, lastName);
+        secret = new Secret(description, pineApple);
         secrets.add(secret);
     }
 

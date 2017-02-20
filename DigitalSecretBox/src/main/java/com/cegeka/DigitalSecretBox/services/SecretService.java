@@ -4,7 +4,6 @@ import com.cegeka.DigitalSecretBox.domain.pineapples.Pineapple;
 import com.cegeka.DigitalSecretBox.domain.pineapples.PineappleRepository;
 import com.cegeka.DigitalSecretBox.domain.secrets.Secret;
 import com.cegeka.DigitalSecretBox.domain.secrets.SecretRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import javax.inject.Inject;
@@ -19,22 +18,20 @@ public class SecretService {
     @Inject
     private SecretRepository secretRepository;
 
-    public void addSecret(String description, String firstName, String lastName)
-    {
-        SecretRepository.addSecret(description,firstName,lastName);
+    public void addSecret(String description, String firstName, String lastName) {
+        SecretRepository.addSecret(description, firstName, lastName);
     }
 
-    public void getSecret(Secret secret){
+    public void getSecret(Secret secret) {
         SecretRepository.getSecret(secret);
     }
-    public void getPineApple(Pineapple pineapple)
-    {
+
+    public void getPineApple(Pineapple pineapple) {
         SecretRepository.getPineApple(pineapple);
     }
-    public List<Secret> getAllSecrets()
-    {
-       return secretRepository.getAllSecrets();
-    }
 
+    public List<Secret> getAllSecrets() {
+        return secretRepository.getAllSecrets();
+    }
 
 }

@@ -29,4 +29,5 @@ public class SecretController {
             @RequestParam(value = "lastName", required = true) String lastName) {
         secretService.addSecret(description, firstName, lastName);
     }
+
 }

@@ -58,7 +58,7 @@
             this.SecretDescription.Size = new System.Drawing.Size(60, 13);
             this.SecretDescription.TabIndex = 2;
             this.SecretDescription.Text = "Description";
-            this.SecretDescription.Click += new System.EventHandler(this.Upload_Click);
+//            this.SecretDescription.Click += new System.EventHandler(this.Upload_Click);
             // 
             // FirstName
             // 

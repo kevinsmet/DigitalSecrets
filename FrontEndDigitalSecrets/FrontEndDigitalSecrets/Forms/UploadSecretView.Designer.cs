@@ -100,6 +100,7 @@
             this.Upload.TabIndex = 3;
             this.Upload.Text = "Upload";
             this.Upload.UseVisualStyleBackColor = true;
+            this.Upload.Click += new System.EventHandler(this.Upload_Click_1);
             // 
             // UploadSecretView
             // 
